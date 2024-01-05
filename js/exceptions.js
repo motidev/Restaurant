@@ -11,13 +11,14 @@ class BaseException extends Error {
 
 // Excepcion para variables que esten vacias
 class EmptyValueException extends BaseException {
-    constructor(fileName, fileNumber) {
+    constructor(value, fileName, fileNumber) {
         super(
-            "[Error] => The value cannnot be empty",
+            `[Error] => The ${value} cannnot be empty`,
             fileName,
             fileNumber
         );
         this.name = "EmptyValueException";
+        this.value = value;
     }
 }
 
