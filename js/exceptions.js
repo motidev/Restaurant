@@ -22,6 +22,19 @@ class EmptyValueException extends BaseException {
     }
 }
 
+// Excepcion para indicar que una clase se ha creado de manera incorrecta
+class InvalidConstructorException extends BaseException {
+    constructor(value, fileName, fileNumber) {
+        super(
+            `[Error] => The ${value} cannnot be created without the new operator`,
+            fileName,
+            fileNumber
+        );
+        this.name = "InvalidConstructorException";
+        this.value = value;
+    }
+}
+
 
 // Exportamos las excepciones
-export { EmptyValueException };
+export { EmptyValueException, InvalidConstructorException };
