@@ -35,6 +35,19 @@ class InvalidConstructorException extends BaseException {
     }
 }
 
+// Excepcion para cuando el valor introducido no sea de un tipo valido
+class InvalidTypeExecption extends BaseException {
+    constructor(value, type, fileName, fileNumber) {
+        super(
+            `[Error] => The ${value} has to be an ${type} type`,
+            fileName,
+            fileNumber
+        );
+        this.name = "InvalidTypeExecption";
+        this.value = value;
+        this.type = type;
+    }
+}
 
 // Exportamos las excepciones
-export { EmptyValueException, InvalidConstructorException };
+export { EmptyValueException, InvalidConstructorException, InvalidTypeExecption};
