@@ -1,3 +1,4 @@
+import { Allergen } from "./objects/allergen.js";
 import { Category } from "./objects/category.js";
 import { Dish } from "./objects/dish.js";
 
@@ -35,6 +36,19 @@ function test() {
         console.log(category.toString());
     } catch (error) {
         console.log(error.message)
+    }
+
+    // Testeo Allergen
+    try {
+        console.log("--- TESTEANDO CLASE ALLERGEN ---");
+        
+        // Creamos el alergeno
+        const allergen = new Allergen("Alérgeno");
+        allergen.description = "Descripción del alérgeno";
+
+        console.log(allergen.toString());
+    } catch (error) {
+        console.log(error.message);
     }
 }
 
