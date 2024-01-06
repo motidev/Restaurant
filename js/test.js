@@ -1,6 +1,7 @@
 import { Allergen } from "./objects/allergen.js";
 import { Category } from "./objects/category.js";
 import { Dish } from "./objects/dish.js";
+import { Menu } from "./objects/menu.js";
 
 // Creamos nuestra funcion de testeo
 function test() {
@@ -22,7 +23,7 @@ function test() {
         console.log("Dish name -> " + dish.name);
         console.log("Dish description -> " + dish.description);
     } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
     }
 
     // Testeo Category
@@ -35,7 +36,7 @@ function test() {
 
         console.log(category.toString());
     } catch (error) {
-        console.log(error.message)
+        console.error(error.message)
     }
 
     // Testeo Allergen
@@ -48,7 +49,20 @@ function test() {
 
         console.log(allergen.toString());
     } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
+    }
+
+    // Testeo Menu
+    try {
+        console.log("--- TESTEANDO CLASE MENU ---");
+
+        // Creamos el menu
+        const menu = new Menu("Menú");
+        menu.description = "Descripción del menu";
+
+        console.log(menu.toString());
+    } catch (error) {
+        console.error(error.message);
     }
 }
 
