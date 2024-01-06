@@ -85,8 +85,7 @@ class Dish {
     }
     // Creamos el toString de nuestra clase
     toString() {
-        return `Dish [ name = ${this.#name}, description = ${this.#description},
-                ingedients = ${this.#ingredients.join()}, image = ${this.#image}]`;
+        return `Dish [ name = ${this.#name}, description = ${this.#description}, ingedients = ${this.#ingredients}, image = ${this.#image}]`;
     }
 }
 
