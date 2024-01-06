@@ -1,3 +1,6 @@
+import { EmptyValueException, InvalidConstructorException } from "../exceptions";
+
+// Objeto con el que podemos crear la estructura de las categorias
 class Category { 
     #name;
     #description;
