@@ -1,4 +1,4 @@
-import { Dish } from "./Dish.js";
+import { Dish } from "./objects/Dish.js";
 
 // Creamos nuestra funcion de testeo
 function test() {

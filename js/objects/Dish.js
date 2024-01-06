@@ -1,4 +1,4 @@
-import { EmptyValueException, InvalidConstructorException, InvalidTypeExecption } from "./exceptions.js";
+import { EmptyValueException, InvalidConstructorException, InvalidTypeExecption } from "../exceptions.js";
 
 class Dish {
     // Declaramos los atributos privados de nuestra clase
