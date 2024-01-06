@@ -1,4 +1,4 @@
-import { EmptyValueException, InvalidConstructorException } from "../exceptions";
+import { EmptyValueException, InvalidConstructorException } from "../exceptions.js";
 
 // Objeto con el que podemos crear la estructura de las categorias
 class Category { 
