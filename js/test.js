@@ -6,7 +6,7 @@ import { Menu } from "./objects/menu.js";
 import { Restaurant } from "./objects/restaurant.js";
 
 // Creamos nuestra funcion de testeo
-function test() {
+function testObjects() {
     console.log("Test fucntion");
 
     // Testeo dish
@@ -67,6 +67,7 @@ function test() {
         console.error(error.message);
     }
 
+    // Testeo restaurant & coordinate
     try {
         console.log("--- TESTEANDO RESTAURANT & COORDINATE ---");
 
@@ -85,4 +86,4 @@ function test() {
 }
 
 // Llamamos a la función de testeo para que se ejecute
-test();
+testObjects();
