@@ -49,5 +49,18 @@ class InvalidTypeExecption extends BaseException {
     }
 }
 
+// Excepcion para valores incorrectos
+class InvalidValueException extends BaseException {
+    constructor(value, fileName, fileNumber) {
+        super(
+            `[Error] => The ${value} is not correct`,
+            fileName,
+            fileNumber
+        );
+        this.name = "InvalidValueException";
+        this.value = value;
+    }
+}
+
 // Exportamos las excepciones
-export { EmptyValueException, InvalidConstructorException, InvalidTypeExecption};
+export { EmptyValueException, InvalidConstructorException, InvalidTypeExecption, InvalidValueException};
