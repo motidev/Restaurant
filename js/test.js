@@ -1,7 +1,9 @@
 import { Allergen } from "./objects/allergen.js";
 import { Category } from "./objects/category.js";
+import { Coordinate } from "./objects/coordinate.js";
 import { Dish } from "./objects/dish.js";
 import { Menu } from "./objects/menu.js";
+import { Restaurant } from "./objects/restaurant.js";
 
 // Creamos nuestra funcion de testeo
 function test() {
@@ -61,6 +63,22 @@ function test() {
         menu.description = "Descripción del menu";
 
         console.log(menu.toString());
+    } catch (error) {
+        console.error(error.message);
+    }
+
+    try {
+        console.log("--- TESTEANDO RESTAURANT & COORDINATE ---");
+
+        // Creamos el restaurante y las coordenadas
+        const coords = new Coordinate(75, 129);
+        const restaurant = new Restaurant("Doña croqueta");
+
+        restaurant.description = "Restaurante especializado en croquetas";
+        restaurant.location = coords;
+
+        console.log(coords.toString());
+        console.log(restaurant.toString());
     } catch (error) {
         console.error(error.message);
     }
